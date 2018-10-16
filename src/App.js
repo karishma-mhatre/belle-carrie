@@ -4,13 +4,12 @@ import Menu from './Components/Menu/Menu';
 import Home from './Components/Home/Home';
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact';
-// import {Link, Route, Router} from 'react-router';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
   render() {
-let menuItems = [
+  let menuItems = [
       {
         name: "Home",
         subMenu: [],
@@ -37,20 +36,20 @@ let menuItems = [
         state: "/blog"
       }
     ]
-    return (
-      <div>  
-        <Header/>
-        <Router>
-          <div className="content">
+  return (
+    <div>  
+      <Header/>
+       <Router>
+        <div className="content">
           <Menu menuItems = {menuItems}></Menu>
-            <div  className="background-white">
-              <Route exact path="" component={Home} ></Route>
-              <Route path="/about" component={About} ></Route>
-              <Route path="/contact" component={Contact}></Route>
-            </div>
+          <div  className="background-white">
+            <Route exact path="" component={Home} ></Route>
+            <Route path="/about" component={About} ></Route>
+            <Route path="/contact" component={Contact}></Route>
           </div>
-        </Router>
-      </div>   
+        </div>
+      </Router>
+    </div>   
     );
   }
 }
