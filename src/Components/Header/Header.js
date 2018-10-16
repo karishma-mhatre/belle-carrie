@@ -1,5 +1,6 @@
 import React from 'react';
 import "./header.css";
+
 class Header extends React.Component {
 
     showMenu = (e) => {
@@ -19,7 +20,7 @@ class Header extends React.Component {
                 <h2 className="greyish-green-font large-font uppercase-text">Rehabilitation Yoga</h2>
                 <span className = "menu-icon" onClick = {this.showMenu}></span>
             </div>
-        )
+        );
     }
 }
 export default Header;

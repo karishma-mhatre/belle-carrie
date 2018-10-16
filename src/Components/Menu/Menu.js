@@ -2,10 +2,11 @@ import React from 'react';
 import MenuItem from '../MenuItem/MenuItem';
 import { Link } from 'react-router-dom';
 import "./menu.css";
+
 class Menu extends React.Component {
     render() {
         return (
-            <div className="menu" id = "menu">
+            <div className="menu" id="menu">
                 {
                     this.props.menuItems.map((menu) => {
                         return (
@@ -16,7 +17,7 @@ class Menu extends React.Component {
                     })
                 }
             </div>
-        )
+        );
     }
 }
 export default Menu;
