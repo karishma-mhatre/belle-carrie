@@ -1,0 +1,18 @@
+.menu-item {
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #b6d8cf;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+ 
+.sub-menu {
+    display: none;
+    position: absolute;
+    text-align: center;
+    padding: 10px 0px
+}

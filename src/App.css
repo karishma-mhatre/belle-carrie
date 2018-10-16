@@ -1,0 +1,64 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.background-white {
+  background-color: #ffff;
+}
+
+.light-green-font {
+ color: #99fa99;
+}
+
+.green-font {
+  color: #21a51e
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+.greyish-green-font {
+  color: #b6d8cf;
+}
+
+.extra-large-font {
+  font-size: 7vh;
+}
+
+.large-font {
+  font-size: 4vh;
+}
+
+.medium-font {
+
+}
+
+.small-font {
+
+}
+
+.content {
+  max-width: 880px;
+  margin: auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 912px) {
+  .content {
+    width: 90%;
+  }
+}

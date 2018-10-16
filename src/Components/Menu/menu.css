@@ -1,0 +1,16 @@
+.menu {
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 912px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
